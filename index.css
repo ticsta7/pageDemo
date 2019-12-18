@@ -1,0 +1,68 @@
+.container{
+    width: 352px;
+    margin: 0 auto;
+}
+
+img{
+    border-radius:10px;
+}
+
+.middle{
+    height: 242px;
+    background-color: #9e9b9b;
+}
+
+.middle img{
+    margin-top: 12px ;
+    width: 100%;
+}
+
+.middle .left{
+    display: inline-block;
+}
+
+.middle a{
+    margin-right: 0px;
+    float: right;
+}
+
+
+
+.bottom  img{
+    height: 74px;
+    width: 120px;
+    display: block;
+}
+
+.bottom .giftItem {
+    text-align: center;
+}
+
+.bottom .giftItem .left{
+    float: left;
+    margin-right: 85px;
+}
+
+.bottom .giftItem .right{
+    display: inline-block;  
+    /*
+     上面float之后，内部变成inline-block
+     这里要手动设置一下，因为img是默认inline
+     */
+}
+
+.bottom .giftItem::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.bottom h3 {
+    text-align: center;
+}
+
+.btn{
+    background-color: #e0bc58;
+    width: 310px;
+    height: 34px;
+}
