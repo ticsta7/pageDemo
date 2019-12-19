@@ -1,5 +1,12 @@
+/* .top,
+.middle,
+.bottom{
+    width: 352px;
+} */
+
 .container{
     width: 352px;
+    width: 306px;
     margin: 0 auto;
 }
 
@@ -13,10 +20,10 @@ img{
 }
 
 .top img{
-    /* margin-top: 12px ; */
+    margin-top: 12px ;
     width: 310px;
     height: 178px;
-    margin: 12px auto 0;
+    /* margin: 12px 23px 0; */
 }
 
 .top .left{
@@ -28,7 +35,10 @@ img{
     float: right;
 }
 
+.middle{
+    margin: 15px 0 ;
 
+}
 
 .middle  img{
     height: 74px;
@@ -40,9 +50,13 @@ img{
     text-align: center;
 }
 
+.middle .giftItem li p {
+    margin-bottom: -6px;
+}
+
 .middle .giftItem .left{
     float: left;
-    margin-right: 85px;
+    margin-right: 40px;
 }
 
 .middle .giftItem .right{
@@ -59,7 +73,7 @@ img{
     clear: both;
 }
 
-/* to-do: 亲子酒店 一卡通用 */
+
 .bottom {  
     text-align: center;
 }
