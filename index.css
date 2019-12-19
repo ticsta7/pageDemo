@@ -7,43 +7,45 @@ img{
     border-radius:10px;
 }
 
-.middle{
+.top{
     height: 242px;
-    background-color: #9e9b9b;
+    background-color: #f8f8f8;
 }
 
-.middle img{
-    margin-top: 12px ;
-    width: 100%;
+.top img{
+    /* margin-top: 12px ; */
+    width: 310px;
+    height: 178px;
+    margin: 12px auto 0;
 }
 
-.middle .left{
+.top .left{
     display: inline-block;
 }
 
-.middle a{
+.top a{
     margin-right: 0px;
     float: right;
 }
 
 
 
-.bottom  img{
+.middle  img{
     height: 74px;
     width: 120px;
     display: block;
 }
 
-.bottom .giftItem {
+.middle .giftItem {
     text-align: center;
 }
 
-.bottom .giftItem .left{
+.middle .giftItem .left{
     float: left;
     margin-right: 85px;
 }
 
-.bottom .giftItem .right{
+.middle .giftItem .right{
     display: inline-block;  
     /*
      上面float之后，内部变成inline-block
@@ -51,18 +53,32 @@ img{
      */
 }
 
-.bottom .giftItem::after{
+.middle .giftItem::after{
     content: '';
     display: block;
     clear: both;
 }
 
-.bottom h3 {
+/* to-do: 亲子酒店 一卡通用 */
+.bottom {  
     text-align: center;
 }
 
+.bottom .container .decr,
+.price{
+    color: #e0bc58;
+}
+
+.bottom p{
+    font-size: 10px;
+    color: #a0a0a0;
+}
 .btn{
     background-color: #e0bc58;
     width: 310px;
     height: 34px;
+    color: #fff;
+    margin-top: 18px;
+    margin-bottom: 24px;
 }
+
