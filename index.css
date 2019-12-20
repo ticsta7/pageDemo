@@ -48,6 +48,7 @@ img{
 
 .middle .giftItem {
     text-align: center;
+    margin-top: 14px;
 }
 
 .middle .giftItem li p {
@@ -57,6 +58,10 @@ img{
 .middle .giftItem .left{
     float: left;
     margin-right: 40px;
+}
+
+.middle .giftItem .left img{
+    border:1px solid #e0bc58;
 }
 
 .middle .giftItem .right{
