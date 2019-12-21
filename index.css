@@ -24,15 +24,24 @@ img{
     width: 310px;
     height: 178px;
     /* margin: 12px 23px 0; */
+    box-shadow: 3px 5px 3px 2px rgba(113, 103, 103, 0.18);
 }
 
 .top .left{
     display: inline-block;
 }
 
+
+
+.top .left span:last-child{
+    font-size: 10px;
+}
+
 .top a{
     margin-right: 0px;
     float: right;
+    font-size: 10px;
+    margin-top: 5px;
 }
 
 .middle{
@@ -44,6 +53,10 @@ img{
     height: 74px;
     width: 120px;
     display: block;
+}
+
+.middle .title i{
+    font-size: 19px;
 }
 
 .middle .giftItem {
@@ -58,6 +71,17 @@ img{
 .middle .giftItem .left{
     float: left;
     margin-right: 40px;
+    position: relative;
+}
+
+.middle .giftItem .left i{
+    position: absolute;
+    right: -5px;
+    top: -13px;
+    background-color: red;
+    border-radius: 50%;
+    height: 16px;
+    width: 16px;
 }
 
 .middle .giftItem .left img{
@@ -85,19 +109,25 @@ img{
 
 .bottom .container .decr,
 .price{
-    color: #e0bc58;
+    color: #ceb16f;
 }
 
-.bottom p{
+
+.bottom .foot{
     font-size: 10px;
     color: #a0a0a0;
+    margin-top: -15px;
 }
-.btn{
+.bottom  .btn{
     background-color: #e0bc58;
     width: 310px;
-    height: 34px;
+    height: 42px;
     color: #fff;
-    margin-top: 18px;
+    margin-top: 10px;
     margin-bottom: 24px;
+    border-radius: 5px;
 }
 
+.bottom .btn p{
+    margin:7px auto;
+}
