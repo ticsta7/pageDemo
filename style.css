@@ -21,12 +21,32 @@ img{
 
 .cardShow .priv a{
     float: left;
-    margin-left: 12px;
+    display: inline-block;
+}
+
+.cardShow .priv {
+ position: relative;
+}
+
+.cardShow .priv .left{
+    margin-left: 42px;
+}
+
+.cardShow .priv .left::before{
+    content:'';
+    background-image:url(./font/crown.png);
+    background-repeat: no-repeat;
+    background-size:16px 16px;
+    position: absolute;
+    width:16px;
+    height:16px;
+    top: 5px;
+    left: 16px;
 }
 
 
 .cardShow .priv a:last-child{
-    margin-left: 116px;
+    margin-left: 86px;
 }
 /* 产生的浮动流，
 让.priv没被carshow包进去 */
@@ -45,9 +65,21 @@ img{
     position: relative;
 }
 
+.cardSelect .title span::before{
+    content:'';
+    background-image:url(./font/gift.png);
+    background-repeat: no-repeat;
+    background-size:16px 16px;
+    position: absolute;
+    width:16px;
+    height:16px;
+    top: 5px;
+    left: -20px;
+}
+
 .cardSelect .title span{
     position: absolute;
-    left: 12px;
+    left: 30px;
     top: -30px;
 }
 
@@ -57,10 +89,29 @@ img{
 }
 .cardSelect .giftItem{
     margin-top: 10px;
+    position: relative;
+
 }
 
 .cardSelect .giftItem .left{
     margin-left: 10px;
+}
+
+.cardSelect .giftItem .left img::before{
+    content:'';
+    /* background-color: black; */
+    background-image:url(./font/right.png);
+    background-repeat: no-repeat;
+    background-size:16px 16px;
+    position: absolute;
+    width:16px;
+    height:16px;
+    top: 3px;
+    left: 0px;
+}
+
+.cardSelect .giftItem .left img{
+    border:1px solid #e0bc58;
 }
 
 .cardSelect .giftItem li{
@@ -99,4 +150,17 @@ img{
     font-size: 10px;
     color: #a0a0a0;
     margin-top: 15px;
+    position: relative;
+}
+
+.cardPurchase .foot span::before{
+    content:'';
+    background-image:url(./font/时间.png);
+    background-repeat: no-repeat;
+    background-size:16px 16px;
+    position: absolute;
+    width:16px;
+    height:16px;
+    top: 3px;
+    left: 120px;
 }
