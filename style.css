@@ -1,5 +1,5 @@
 .container{
-    padding:20px 24px 0;
+    padding-top: 20px;
     text-align: center;
     /* 全部元素 水平居中 */
 }
@@ -29,7 +29,7 @@ img{
 }
 
 .cardShow .priv .left{
-    margin-left: 42px;
+    margin-left: 65px;
 }
 
 .cardShow .priv .left::before{
@@ -41,7 +41,7 @@ img{
     width:16px;
     height:16px;
     top: 5px;
-    left: 16px;
+    left: 40px;
 }
 
 
@@ -58,7 +58,7 @@ img{
 
 .cardSelect{
     margin: 15px 0 ;
-    padding-top: 36px;
+    padding: 36px 24px 0;
 }
 
 .cardSelect .title{
@@ -89,25 +89,27 @@ img{
 }
 .cardSelect .giftItem{
     margin-top: 10px;
-    position: relative;
 
 }
 
 .cardSelect .giftItem .left{
     margin-left: 10px;
+    position: relative;
 }
 
-.cardSelect .giftItem .left img::before{
+.cardSelect .giftItem .left::before{
     content:'';
-    /* background-color: black; */
+    background-color: #dcb968;
     background-image:url(./font/right.png);
     background-repeat: no-repeat;
     background-size:16px 16px;
     position: absolute;
     width:16px;
     height:16px;
-    top: 3px;
-    left: 0px;
+    top: -5px;
+    right: -7px;
+    z-index: 100;
+    border-radius: 50% ;
 }
 
 .cardSelect .giftItem .left img{
