@@ -10,7 +10,7 @@ img{
 
 .cardShow{
     padding-bottom: 10px;
-    /* background-color: blue; */
+    background-color: #f8f8f8;
 }
 
 .cardShow img{
@@ -21,23 +21,12 @@ img{
 
 .cardShow .priv a{
     float: left;
-    /* margin-left: 10px; */
+    margin-left: 12px;
 }
 
-/* .cardShow .priv div{
-float: left;
-}
-
-.cardShow .priv .privLogo{
-    text-align: left;
-}
-
-.cardShow .priv .privDetail{
-    text-align: right;
-} */
 
 .cardShow .priv a:last-child{
-    text-align: right;
+    margin-left: 116px;
 }
 /* 产生的浮动流，
 让.priv没被carshow包进去 */
@@ -49,11 +38,29 @@ float: left;
 
 .cardSelect{
     margin: 15px 0 ;
+    padding-top: 36px;
+}
+
+.cardSelect .title{
+    position: relative;
+}
+
+.cardSelect .title span{
+    position: absolute;
+    left: 12px;
+    top: -30px;
 }
 
 .cardSelect .giftItem img{
     height: 74px;
     width: 122px;
+}
+.cardSelect .giftItem{
+    margin-top: 10px;
+}
+
+.cardSelect .giftItem .left{
+    margin-left: 10px;
 }
 
 .cardSelect .giftItem li{
