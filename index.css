@@ -1,9 +1,3 @@
-/* .top,
-.middle,
-.bottom{
-    width: 352px;
-} */
-
 .container{
     width: 352px;
     width: 306px;
@@ -14,12 +8,12 @@ img{
     border-radius:10px;
 }
 
-.top{
+.cardShow{
     height: 242px;
     background-color: #f8f8f8;
 }
 
-.top img{
+.cardShow img{
     margin-top: 12px ;
     width: 310px;
     height: 178px;
@@ -27,68 +21,68 @@ img{
     box-shadow: 3px 5px 3px 2px rgba(113, 103, 103, 0.18);
 }
 
-.top .left{
+.cardShow .left{
     display: inline-block;
 }
 
 
 
-.top .left span:last-child{
+.cardShow .left span:last-child{
     font-size: 10px;
 }
 
-.top a{
+.cardShow a{
     margin-right: 0px;
     float: right;
     font-size: 10px;
-    margin-top: 5px;
+    margin-cardShow: 5px;
 }
 
-.middle{
+.cardSelect{
     margin: 15px 0 ;
 
 }
 
-.middle  img{
+.cardSelect  img{
     height: 74px;
     width: 120px;
     display: block;
 }
 
-.middle .title i{
+.cardSelect .title i{
     font-size: 19px;
 }
 
-.middle .giftItem {
+.cardSelect .giftItem {
     text-align: center;
-    margin-top: 14px;
+    margin-cardShow: 14px;
 }
 
-.middle .giftItem li p {
-    margin-bottom: -6px;
+.cardSelect .giftItem li p {
+    margin-cardPurchase: -6px;
 }
 
-.middle .giftItem .left{
+.cardSelect .giftItem .left{
     float: left;
     margin-right: 40px;
     position: relative;
 }
 
-.middle .giftItem .left i{
+.cardSelect .giftItem .left .iconfont{
     position: absolute;
     right: -5px;
-    top: -13px;
+    cardShow: -13px;
     background-color: red;
     border-radius: 50%;
     height: 16px;
     width: 16px;
 }
 
-.middle .giftItem .left img{
+.cardSelect .giftItem .left img{
     border:1px solid #e0bc58;
 }
 
-.middle .giftItem .right{
+.cardSelect .giftItem .right{
     display: inline-block;  
     /*
      上面float之后，内部变成inline-block
@@ -96,38 +90,38 @@ img{
      */
 }
 
-.middle .giftItem::after{
+.cardSelect .giftItem::after{
     content: '';
     display: block;
     clear: both;
 }
 
 
-.bottom {  
+.cardPurchase {  
     text-align: center;
 }
 
-.bottom .container .decr,
+.cardPurchase .container .decr,
 .price{
     color: #ceb16f;
 }
 
 
-.bottom .foot{
+.cardPurchase .foot{
     font-size: 10px;
     color: #a0a0a0;
-    margin-top: -15px;
+    margin-cardShow: -15px;
 }
-.bottom  .btn{
+.cardPurchase  .btn{
     background-color: #e0bc58;
     width: 310px;
     height: 42px;
     color: #fff;
-    margin-top: 10px;
-    margin-bottom: 24px;
+    margin-cardShow: 10px;
+    margin-cardPurchase: 24px;
     border-radius: 5px;
 }
 
-.bottom .btn p{
+.cardPurchase .btn p{
     margin:7px auto;
 }

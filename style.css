@@ -1,0 +1,95 @@
+.container{
+    padding:20px 24px 0;
+    text-align: center;
+    /* 全部元素 水平居中 */
+}
+
+img{
+    border-radius:10px;
+}
+
+.cardShow{
+    padding-bottom: 10px;
+    /* background-color: blue; */
+}
+
+.cardShow img{
+    width: 308px;
+    height: 178px;
+    box-shadow: 3px 5px 3px 2px rgba(113, 103, 103, 0.18);
+}
+
+.cardShow .priv a{
+    float: left;
+    /* margin-left: 10px; */
+}
+
+/* .cardShow .priv div{
+float: left;
+}
+
+.cardShow .priv .privLogo{
+    text-align: left;
+}
+
+.cardShow .priv .privDetail{
+    text-align: right;
+} */
+
+.cardShow .priv a:last-child{
+    text-align: right;
+}
+/* 产生的浮动流，
+让.priv没被carshow包进去 */
+.cardShow .priv::after{
+    content:'';
+    display:block;
+    clear:both;
+}
+
+.cardSelect{
+    margin: 15px 0 ;
+}
+
+.cardSelect .giftItem img{
+    height: 74px;
+    width: 122px;
+}
+
+.cardSelect .giftItem li{
+    float: left;
+}
+
+.cardSelect .giftItem li:first-child{
+    margin-right: 48px;
+}
+
+.cardSelect .giftItem::after{
+    content:'';
+    display:block;
+    clear:both;
+}
+
+.cardSelect .price,
+.cardPurchase .decr{
+    color: #ceb16f;
+}
+
+.cardPurchase  .btn{
+    background-color: #e0bc58;
+    width: 308px;
+    height: 42px;
+    color: #fff;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.cardPurchase .btn p{
+    margin:7px auto;
+}
+
+.cardPurchase .foot{
+    font-size: 10px;
+    color: #a0a0a0;
+    margin-top: 15px;
+}
