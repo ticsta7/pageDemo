@@ -108,11 +108,11 @@
     height:100%;
 }
 
-.cardSelect .giftItem .left{
+.cardSelect .giftItem .icon{
     position: relative;
 }
 
-.cardSelect .giftItem .left::before{
+.cardSelect .giftItem .icon::before{
     content:'';
     background-color: #dcb968;
     background-image:url(./font/right.png);
@@ -127,8 +127,14 @@
     border-radius: 50% ;
 }
 
-.cardSelect .giftItem .left img{
+/* .cardSelect .giftItem .left img{
     border:1px solid #e0bc58;
+} */
+
+.selected{
+    border:2px solid #e0bc58;
+    /* position: relative; */
+
 }
 
 .cardSelect .giftItem li{

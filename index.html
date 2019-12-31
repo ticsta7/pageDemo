@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./init.css">
     <!-- <link rel="stylesheet" href="./index.css"> -->
     <link rel="stylesheet" href="./style.css">
+    <script src="./lib/jquery-3.4.1.js"></script>
+    <script src="./main.js"></script>
 </head>
 <body>
     <div class="container">
@@ -15,7 +17,7 @@
         
         <div class="cardShow">
             <div class="img-container">
-                <img src="./oraCardBig.png" alt="">
+                <img id="mainImg" src="./oraCardBig.png" alt="">
             </div>
               
             <div class="priv">    
@@ -28,9 +30,9 @@
             <h3 class="title">选择礼品</h3>
 
            <ul class="giftItem">
-               <li class="left">
+               <li class="left icon">
                     <div class="img-container">
-                        <img src="./oraCardBig.png" alt="">
+                        <img class="selected" src="./oraCardBig.png" alt="">
                     </div>
                     <p>Bekka会员</p>
                     <p class="price">￥199</p>
