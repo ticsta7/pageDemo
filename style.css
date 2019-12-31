@@ -1,38 +1,38 @@
 .container{
-    text-align: center;
-    /* 全部元素 水平居中 */
-}
-
-img{
-    border-radius:10px;
-    /* height: 74px; */
+    background: #fff;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .cardShow{
-    padding:20px 0 10px;
-    background-color: #f8f8f8;
+    padding:20px 20px 10px 20px;
+    background: #f8f8f8;
 }
 
-.cardShow img{
-    width: 308px;
-    height: 178px;
+.cardShow .img-container{
     box-shadow: 3px 5px 3px 2px rgba(113, 103, 103, 0.18);
+    max-height: 400px;
+    overflow: hidden;
+    /* oveflow暂时没出现，但是先留着 */
+    border-radius: 15px;
+}
+
+.img-container img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 15px;
 }
 
 .cardShow .priv{
-    display:table;
-    margin:0 auto;
+    margin-top: 10px;
 }
 
-
-.cardShow .priv .float{
-    float: left;
-    display: inline-block;
-}
-
-.cardShow .priv .left{
-    margin-left: 26px;
+.cardShow .priv .left{    
+    padding-left: 25px;
     position: relative;
+    width: 50%;
+    display: inline-block;
 }
 
 .cardShow .priv .left::before{
@@ -44,68 +44,72 @@ img{
     width:16px;
     height:16px;
     top: 5px;
-    right: 60px;
+    left: 3px;
 }
 
+.cardShow .priv a{
+    display: inline-block;
+    text-align: right;
+    width: 50%;
+}
 
-.cardShow .priv a:last-child{
-    margin-left: 86px;
-}
-/* 产生的浮动流，
-让.priv没被carshow包进去 */
-.cardShow .priv::after{
-    content:'';
-    display:block;
-    clear:both;
-}
 
 .cardSelect{
-    padding-top: 36px ;
-    padding-left: 1px;
+    padding-left: 20px;
     display:table;
     margin:0 auto;
-
 }
 
 .cardSelect .title{
     position: relative;
+    padding: 0 0 0 23px;
+    /* 给图标的地方 */
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 20px 0;
 }
 
-.cardSelect .title span::before{
+.cardSelect .title::before{
     content:'';
     background-image:url(./font/gift.png);
     background-repeat: no-repeat;
-    background-size:16px 16px;
+    background-size:20px 20px;
     position: absolute;
-    width:16px;
-    height:16px;
-    top: 5px;
-    left: -20px;
+    width:20px;
+    height:20px;
+    top: 2px;
+    left: 0px;
 }
 
-.cardSelect .title span{
-    position: absolute;
-    left: 30px;
-    top: -30px;
+/* .cardSelect .giftItem li img{
+    height: 74px;
+    width: 122px;
+} */
+
+.cardSelect .giftItem{
+    display: flex;
+    text-align: center
+}
+
+.cardSelect .giftItem li{
+    margin-right: 45px;
+}
+
+.cardSelect .giftItem .img-container{
+    max-height: 200px;
+    border-radius: 15px;
+    overflow: hidden;
 }
 
 .cardSelect .giftItem li img{
-    height: 74px;
-    width: 122px;
-}
-
-.cardSelect .giftItem{
-    margin-top: 10px;
+    display: block;
+    width: 100%;
+    height:100%;
 }
 
 .cardSelect .giftItem .left{
-    margin-left: 7px;
     position: relative;
-    margin-right: 67px;
-
-}
-
-.cardSelect .giftItem li:first-child{
 }
 
 .cardSelect .giftItem .left::before{
@@ -144,17 +148,24 @@ img{
     color: #ceb16f;
 }
 
+.cardPurchase{
+    text-align: center;
+    margin-top: 20px;
+}
+
 .cardPurchase  .btn{
     background-color: #e0bc58;
-    width: 308px;
-    height: 42px;
+    line-height: 42px;
+    /*为什么用line-height代替 height  */
     color: #fff;
-    margin-top: 10px;
+    margin: 0 20px;
     border-radius: 5px;
+    /* width: 100%; */
 }
 
 .cardPurchase .btn p{
     margin:7px auto;
+    display: block; 
 }
 
 .cardPurchase .foot{
@@ -163,12 +174,13 @@ img{
     margin-top: 15px;
 }
 
-.cardPurchase .foot span{
+.cardPurchase .foot p{
     position: relative;
     color: #929292;
+    display: inline-block;
 }
 
-.cardPurchase .foot span::before{
+.cardPurchase .foot p::before{
     content:'';
     background-image:url(./font/时间.png);
     background-repeat: no-repeat;
@@ -176,6 +188,6 @@ img{
     position: absolute;
     width:16px;
     height:16px;
-    top:0px;
-    right: 53px;
+    top:3px;
+    left: -20px;
 }

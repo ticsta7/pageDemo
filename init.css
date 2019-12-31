@@ -1,34 +1,8 @@
-body,
-div,
-dl,
-dt,
-dd,
-ul,
-ol,
-li,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-pre,
-form,
-fieldset,
-legend,
-input,
-button,
-textarea,
-p,
-th,
-td,
-figure {
-  margin: 0;
-  padding: 0;
-}
+*{margin:0; padding:0;}
 li,ul,ol {
   list-style: none;
 }
+
 fieldset,
 img {
   border: 0;
@@ -207,7 +181,7 @@ a:hover {
 }
 
 .btn {
-  display: inline-block;
+  /* display: inline-block; */
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -217,7 +191,7 @@ a:hover {
   vertical-align: middle;
   white-space: nowrap;
 
-  *display: inline;
+  /* *display: inline; */
   *zoom: 1;
 }
 .btn:hover {
