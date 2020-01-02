@@ -77,11 +77,12 @@
 
 .productShow .productTitle a{
     display: inline-block;
-    width: 10%;
+    width: 18%;
     background-color: #f4f4f4;
     line-height: 32px;
     text-align: right;
-    transform: translate(199%, -50%);
+    transform: translate(66%, -53%);
+    font-size: 17px;
     border-bottom-left-radius:999rem;
     border-top-left-radius:999rem;
 }
@@ -89,7 +90,6 @@
 .productShow .recommend{
     font-size: 0;
     padding-left: 0;
-    /* 推荐部分，50%宽度待处理 */
 }
 
 .productShow .recommend a{
@@ -109,8 +109,9 @@ background-color:#fff;
     width: 50%;
 }
 
-
-
+.productSend{
+    margin: 15px 0;
+}
 
 
 
