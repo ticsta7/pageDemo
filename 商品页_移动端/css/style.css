@@ -7,14 +7,12 @@
 .productShow,
 .productSend,
 .productDetail,
-.productComment{
+.productComment,
+.aboutShop{
     background-color: #fff;
-
-}
-
-.wrapper{
     padding-left: 15px;
 }
+
 
 .productImg{
     position: relative;
@@ -72,13 +70,15 @@
     font-size: 16px;
     line-height: 24px;
     font-weight: 900;
-    width: 70%;
+    width: 77%;
+    background-color: red;
 }
 
 .productShow .productTitle a{
     display: inline-block;
-    width: 18%;
-    background-color: #f4f4f4;
+    width: 14%;
+    /* background-color: #f4f4f4; */
+    background-color: black;
     line-height: 32px;
     text-align: right;
     transform: translate(66%, -53%);
@@ -111,9 +111,143 @@ background-color:#fff;
 
 .productSend{
     margin: 15px 0;
+    display: flex;
+    line-height: 52px;
+}
+.productSend .title,
+.productDetail .title{
+    margin-right: 25px;
+    color: #b5b5b5;
+}
+
+.productSend .left{
+    width: 80%;
+}
+
+.productSend .left .fenGe{
+    margin: 0 5px;
+    color: #b5b5b5;
+}
+
+.productSend .right{
+    text-align: right;
+    padding-right: 10px;
+    width: 20%;
+    color: #b5b5b5;
+}
+
+.productDetail span{
+    display: inline-block;
+}
+
+.productDetail .service,
+.productDetail .select,
+.productDetail .parameter{
+    line-height: 45px;
+}
+
+.productDetail .service a span:first-child{
+    width: 80%;
+
+}
+
+.productDetail .service a span:last-child{
+    /* width: 10%; */
+    text-align: right;
 }
 
 
+.productDetail .parameter a span:first-child{
+    width: 80%;
 
+}
 
+.productDetail .parameter a span:last-child{
+    /* width: 10%; */
+    text-align: right;
+}
+
+.productComment{
+    margin: 15px 0;
+    font-size: 0;
+}
+
+.productComment span,
+.productComment a
+{
+    display: inline-block;
+}
+
+.productComment a{
+    width: 100%;
+
+}
+
+/* .productComment .title{
+    position: relative;
+} */
+
+.productComment span:first-child{
+    width: 50%;
+    font-size: 16px;
+    color: #333;
+}
+
+.productComment .seeMore{
+    color: #ec5613;
+    width: 50%;
+    text-align: right;
+    font-size: 16px;
+    padding-right: 10px;
+
+    /* position: absolute;
+    right: 5px; */
+}
+
+.aboutShop .shopSum .shopInfo{
+    display: flex;
+    padding-top: 12px;
+}
+
+.aboutShop .shopSum .shopInfo .left{
+    width: 50%;
+    /* display: flex; */
+}
+.aboutShop .shopSum .shopInfo .right{
+    width: 50%;
+}
+
+.aboutShop .shopSum .shopInfo .left div{
+    display: inline-block;
+}
+
+.aboutShop .shopSum .shopInfo .left .img-container{
+    max-width: 66px;
+}
+
+.aboutShop .shopSum .shopInfo .left .img-container img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.aboutShop .shopSum .shopInfo .left .shopName{
+    margin:auto 0;
+}
+
+.aboutShop .shopSum .shopInfo .right div{
+    border: 1px solid #f90;
+    display: inline-block;
+    border-radius: 999rem;
+    padding: 0 10px;
+}
+
+.aboutShop .shopSum .shopInfo .right .allGoods{
+    color:#de7039;
+}
+
+.aboutShop .shopSum .shopInfo .right .getIn{
+    color:#fff;
+    background-color: #fe7701;
+
+}
 
