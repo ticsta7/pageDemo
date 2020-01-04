@@ -13,7 +13,7 @@
     width: 100%;
 }
 
-.productComment span:first-child{
+.productComment .title span:first-child{
     width: 50%;
     font-size: 16px;
     color: #333;
@@ -25,3 +25,68 @@
     text-align: right;
     font-size: 16px;
 }
+
+.productComment .comment .commentList .commentItem {
+    margin: 10px 0;
+}
+
+.productComment .comment .commentList .commentItem .user .img-container,
+.productComment .comment .commentList .commentItem .user .userName{
+    display: inline-block;
+}
+
+.productComment .comment .commentList .commentItem .user .img-container{
+    max-width: 20px;
+    margin-right: 5px;
+}
+
+.productComment .comment .commentList .commentItem .user .img-container img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.productComment .comment .commentList .commentItem .user .userName{
+    color: #999;
+    font-size: 16px;
+}
+
+.commentContent{
+    font-size: 14px;
+}
+
+.productComment .question .quesList li{
+    margin-bottom: 10px;
+    background-color: blue;
+}
+
+.productComment .question .quesList span{
+    line-height: 20px;
+}
+
+.productComment .question .quesList .logo{
+    background-color: #f87a44;
+    color: #fff;
+    padding: 2px;
+    border-radius: 3px;
+    margin-right: 5px;
+    max-width: 23px;
+    font-size: 16px;
+}
+
+.productComment .question .quesList .quesName{
+    width: 44%;
+    font-size: 16px;
+    background-color: red;
+}
+
+.productComment .question .quesList .answer{
+    width: 47%;
+    text-align: right;
+    color: #b1b1b1;
+    font-size: 16px;
+    background-color: black;
+}
+
+
+
+

@@ -6,24 +6,23 @@
     border-bottom: 1px solid #9a9a9a;
 }
 
+
 .aboutShop .shopSum .shopInfo{
-    display: flex;
+    font-size: 0;
 }
 
 .aboutShop .shopSum .shopInfo .left{
-    width: 50%;
-    /* display: flex; */
+    width: 12%;
+    font-size: 14px;
 }
 .aboutShop .shopSum .shopInfo .right{
-    width: 50%;
-}
+    width: 88%;
+    font-size: 14px;
 
-.aboutShop .shopSum .shopInfo .left div{
-    display: inline-block;
 }
 
 .aboutShop .shopSum .shopInfo .left .img-container{
-    max-width: 66px;
+    max-width: 100%;
 }
 
 .aboutShop .shopSum .shopInfo .left .img-container img{
@@ -31,15 +30,30 @@
     border-radius: 5px;
 }
 
-.aboutShop .shopSum .shopInfo .left .shopName{
-    margin:auto 0;
+.aboutShop .shopSum .shopInfo .left,
+.aboutShop .shopSum .shopInfo .right,
+.aboutShop .shopSum .shopInfo .right div
+{
+    display: inline-block;
 }
 
-.aboutShop .shopSum .shopInfo .right div{
+/* 
+.aboutShop .shopSum .shopInfo .left .shopName{
+    margin:auto 0;
+} */
+/* 
+.aboutShop .shopSum .shopInfo .right{
+    display: flex;
+} */
+
+.aboutShop .shopSum .shopInfo .right .allGoods,
+.aboutShop .shopSum .shopInfo .right .getIn{
     border: 1px solid #f90;
-    display: inline-block;
+    /* display: inline-block; */
     border-radius: 999rem;
     padding: 0 10px;
+    width: 50%;
+    text-align: center;
 }
 
 .aboutShop .shopSum .shopInfo .right .allGoods{
@@ -52,7 +66,7 @@
 
 }
 
-/* 垂直居中 */
+/* 垂直居中
 .aboutShop .shopSum .shopInfo .right::after,
 .allGoods,
 .getIn{
@@ -62,7 +76,7 @@
 .aboutShop .shopSum .shopInfo .right::after{
     content:'';
     height:100%;
-}
+} */
 
 .aboutShop .shopSum .shopMark{
     margin: 12px 0;
@@ -115,6 +129,7 @@
     width: 50%;
     display: inline-block;
     font-size: 16px;
+    color: #333;
 }
 
 .aboutShop .shopRecommend .title a .seeMore{
@@ -123,9 +138,18 @@
 
 }
 
+.aboutShop .shopRecommend .otherGoods{
+    font-size: 0;
+}
+
+/* .aboutShop .shopRecommend .otherGoods{
+    display: flex;
+    justify-content:space-between;
+} */
+
 
 .aboutShop .shopRecommend .otherGoods ul li{
-    width: 31%;
+    max-width: 31%;
     float: left;
     margin-right: 10px;
     margin-bottom: 20px;
@@ -133,14 +157,19 @@
 .aboutShop .shopRecommend .otherGoods ul li:last-child{
     margin-right: 0;
 }
-.aboutShop .shopRecommend .otherGoods ul::after{
+/* .aboutShop .shopRecommend .otherGoods ul::after{
     content: '';
     display: block;
     clear: both;
+} */
+
+.aboutShop .shopRecommend .otherGoods ul li p{
+    font-size: 14px;
 }
 
-.aboutShop .shopRecommend .otherGoods .img-container{
-    max-width: 190px;
+.aboutShop .shopRecommend .otherGoods .img-container,
+.aboutShop .shopRecommend .otherGoods .goodsName{
+    max-width: 100%;
 }
 
 .aboutShop .shopRecommend .otherGoods .img-container img{
