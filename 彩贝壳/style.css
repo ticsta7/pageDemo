@@ -35,6 +35,12 @@
     display: inline-block;
 }
 
+.cardShow .priv a{
+    display: inline-block;
+    text-align: right;
+    width: 50%;
+}
+
 .cardShow .priv .left::before{
     content:'';
     background-image:url(./font/crown.png);
@@ -47,11 +53,7 @@
     left: 3px;
 }
 
-.cardShow .priv a{
-    display: inline-block;
-    text-align: right;
-    width: 50%;
-}
+
 
 
 .cardSelect{

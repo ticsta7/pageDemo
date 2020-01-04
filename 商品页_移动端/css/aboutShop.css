@@ -1,0 +1,104 @@
+.aboutShop{
+    padding-top: 12px;
+
+}
+
+.aboutShop .shopSum .shopInfo{
+    display: flex;
+}
+
+.aboutShop .shopSum .shopInfo .left{
+    width: 50%;
+    /* display: flex; */
+}
+.aboutShop .shopSum .shopInfo .right{
+    width: 50%;
+}
+
+.aboutShop .shopSum .shopInfo .left div{
+    display: inline-block;
+}
+
+.aboutShop .shopSum .shopInfo .left .img-container{
+    max-width: 66px;
+}
+
+.aboutShop .shopSum .shopInfo .left .img-container img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.aboutShop .shopSum .shopInfo .left .shopName{
+    margin:auto 0;
+}
+
+.aboutShop .shopSum .shopInfo .right div{
+    border: 1px solid #f90;
+    display: inline-block;
+    border-radius: 999rem;
+    padding: 0 10px;
+}
+
+.aboutShop .shopSum .shopInfo .right .allGoods{
+    color:#de7039;
+}
+
+.aboutShop .shopSum .shopInfo .right .getIn{
+    color:#fff;
+    background-color: #fe7701;
+
+}
+
+/* 垂直居中 */
+.aboutShop .shopSum .shopInfo .right::after,
+.allGoods,
+.getIn{
+    display:inline-block;
+    vertical-align:middle;
+}
+.aboutShop .shopSum .shopInfo .right::after{
+    content:'';
+    height:100%;
+}
+
+.aboutShop .shopSum .shopMark ul{
+    display: flex;
+}
+
+.aboutShop .shopRecommend .otherGoods ul li{
+    max-width: 190px;
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 20px;
+}
+
+.aboutShop .shopRecommend .otherGoods .img-container{
+    max-width: 190px;
+}
+
+.aboutShop .shopRecommend .otherGoods .img-container img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.aboutShop .shopRecommend .otherGoods .goodsName{
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* https://www.zoo.team/article/text-overflow */
+}
+
+.aboutShop .shopRecommend .otherGoods .price{
+    font-size: 10px;
+    color: #ec5613;
+    line-height: 35px;
+}
+
+.aboutShop .shopRecommend .otherGoods .price span{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+

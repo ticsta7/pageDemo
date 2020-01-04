@@ -1,0 +1,27 @@
+.productComment{
+    margin: 15px 0;
+    font-size: 0;
+    padding-right: 15px;
+}
+
+.productComment span,
+.productComment a{
+    display: inline-block;
+}
+
+.productComment a{
+    width: 100%;
+}
+
+.productComment span:first-child{
+    width: 50%;
+    font-size: 16px;
+    color: #333;
+}
+
+.productComment .seeMore{
+    color: #ec5613;
+    width: 50%;
+    text-align: right;
+    font-size: 16px;
+}
