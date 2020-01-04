@@ -4,6 +4,10 @@
     margin: 0 auto;
 }
 
+span{
+    font-size: 16px;
+}
+
 .productShow,
 .productSend,
 .productDetail,
@@ -11,6 +15,7 @@
 .aboutShop{
     background-color: #fff;
     padding-left: 15px;
+    padding-right: 15px;
 }
 
 
@@ -22,7 +27,6 @@
     max-width: 600px;
     max-height: 500px;
     overflow: hidden;
-    /* oveflow暂时没出现，但是先留着 */
 }
 
 .productImg .img-container ul li{
@@ -70,21 +74,20 @@
     font-size: 16px;
     line-height: 24px;
     font-weight: 900;
-    width: 77%;
-    background-color: red;
+    width: 80%;
 }
 
 .productShow .productTitle a{
     display: inline-block;
-    width: 14%;
-    /* background-color: #f4f4f4; */
-    background-color: black;
+    width: 20%;
+    background-color: #f4f4f4;
     line-height: 32px;
     text-align: right;
-    transform: translate(66%, -53%);
+    transform: translate(14%, -43%);
     font-size: 17px;
     border-bottom-left-radius:999rem;
     border-top-left-radius:999rem;
+    padding-right: 15px;
 }
 
 .productShow .recommend{
@@ -115,9 +118,11 @@ background-color:#fff;
     line-height: 52px;
 }
 .productSend .title,
-.productDetail .title{
+.productDetail .title
+{
     margin-right: 25px;
     color: #b5b5b5;
+    vertical-align: top;
 }
 
 .productSend .left{
@@ -131,39 +136,61 @@ background-color:#fff;
 
 .productSend .right{
     text-align: right;
-    padding-right: 10px;
     width: 20%;
     color: #b5b5b5;
 }
 
-.productDetail span{
+.productDetail{
+    font-size: 0;
+    line-height: 38px;
+    padding: 10px 15px 0 15px;
+}
+
+.productDetail .left,
+.productDetail .right,
+.productDetail .selectList{
     display: inline-block;
+    font-size: 16px;
 }
 
-.productDetail .service,
-.productDetail .select,
-.productDetail .parameter{
-    line-height: 45px;
+.productDetail .left{
+    width: 95%;
 }
 
-.productDetail .service a,
-.productDetail .select a,
-.productDetail .parameter a{
-    display: inline-block;
-    width: 89%;
-}
-
-
-.productDetail .service a span:first-child,
-.productDetail .select a span:first-child,
-.productDetail .parameter a span:first-child{
-    width: 90%;
-    color: #000;
-}
-
-.productDetail .service a span:last-child,
-.productDetail .select a span:last-child,
-.productDetail .parameter a span:last-child{
-    width: 10%;
+.productDetail .right{
     text-align: right;
+    color: #b5b5b5;
+    width: 5%;
+}
+
+.productDetail .left a{
+    color: #333;
+
+}
+
+.productDetail .selectList div{
+    display: inline-block;
+    background-color: #f6f6f6;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 5px;
+    color: #9a9a9a;
+    line-height: 25px;
+}
+
+.productDetail .selectList{
+    padding-left: 11%;
+    width: 95%;
+}
+
+.productDetail .selectList .total{
+    max-width: 54%;
+}
+
+.productDetail .selectList .selectItem{
+    max-width: 44%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
 }

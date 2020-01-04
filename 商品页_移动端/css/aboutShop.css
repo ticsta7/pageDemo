@@ -1,6 +1,9 @@
 .aboutShop{
     padding-top: 12px;
+}
 
+.aboutShop .shopSum{
+    border-bottom: 1px solid #9a9a9a;
 }
 
 .aboutShop .shopSum .shopInfo{
@@ -61,15 +64,79 @@
     height:100%;
 }
 
+.aboutShop .shopSum .shopMark{
+    margin: 12px 0;
+}
+
+
 .aboutShop .shopSum .shopMark ul{
     display: flex;
 }
 
+.aboutShop .shopSum .shopMark ul li{
+    width: 32%;
+    margin-right: 9px;
+}
+
+.aboutShop .shopSum .shopMark ul li span{
+    color: #9a9a9a;
+    display: inline-block;
+}
+
+.aboutShop .shopSum .shopMark ul li .markNum{
+    color: #ec5613;
+}
+
+.aboutShop .shopSum .shopMark ul li .markLevel{
+    color: #ec5613;
+    background-color: #fff1eb;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    padding-left: 3px;
+    line-height: 20px;
+}
+
+
+.aboutShop .shopRecommend {
+    padding-top: 10px;
+}
+
+.aboutShop .shopRecommend .title{
+    margin-bottom: 10px;
+}
+
+.aboutShop .shopRecommend .title a{
+    width: 100%;
+    display: inline-block;
+}
+
+.aboutShop .shopRecommend .title a span{
+    width: 50%;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.aboutShop .shopRecommend .title a .seeMore{
+    text-align: right;
+    color: #ec5613;
+
+}
+
+
 .aboutShop .shopRecommend .otherGoods ul li{
-    max-width: 190px;
+    width: 31%;
     float: left;
-    margin-right: 5px;
+    margin-right: 10px;
     margin-bottom: 20px;
+}
+.aboutShop .shopRecommend .otherGoods ul li:last-child{
+    margin-right: 0;
+}
+.aboutShop .shopRecommend .otherGoods ul::after{
+    content: '';
+    display: block;
+    clear: both;
 }
 
 .aboutShop .shopRecommend .otherGoods .img-container{
