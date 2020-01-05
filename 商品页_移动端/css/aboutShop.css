@@ -25,6 +25,7 @@
     font-size: 14px;
     display: flex;
     align-items: center;
+    
 }
 
 .aboutShop .shopSum .shopInfo .left .img-container{
@@ -39,6 +40,11 @@
 
 .aboutShop .shopSum .shopInfo .left .shopName{
     font-size: 18px;
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .aboutShop .shopSum .shopInfo .right .allGoods,
@@ -49,6 +55,12 @@
     width: 50%;
     text-align: center;
     height: 30px;
+
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .aboutShop .shopSum .shopInfo .right .allGoods{
@@ -58,7 +70,8 @@
 .aboutShop .shopSum .shopInfo .right .getIn{
     color:#fff;
     background-color: #fe7701;
-    margin-left: 15px;
+    margin-left: 5px;
+
 }
 
 .aboutShop .shopSum .shopMark{
@@ -70,9 +83,8 @@
     display: flex;
     justify-content: space-between;
 }
+
 .aboutShop .shopSum .shopMark ul li{
-    flex-basis: 24.2%;
-    flex: 1;
     -webkit-line-clamp: 1;
     display: -webkit-box;
     -webkit-box-orient: vertical;

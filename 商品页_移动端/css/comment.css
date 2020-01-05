@@ -1,7 +1,7 @@
 .productComment{
     margin: 15px 0;
     font-size: 0;
-    padding-right: 15px;
+    padding: 15px;
 }
 
 .productComment span,
@@ -9,20 +9,20 @@
     display: inline-block;
 }
 
-.productComment a{
+.productComment .title{
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
 }
 
 .productComment .title span:first-child{
-    width: 50%;
     font-size: 16px;
     color: #333;
 }
 
 .productComment .seeMore{
     color: #ec5613;
-    width: 50%;
-    text-align: right;
     font-size: 16px;
 }
 
@@ -52,11 +52,45 @@
 
 .commentContent{
     font-size: 14px;
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.productComment .show .showList{
+    display: flex;
+    justify-content: space-between;
+}
+
+.productComment .show .showList li{
+    margin-right: 3px;
+}
+
+.productComment .show .showList :first-child{
+    margin-right: 0;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.productComment .show .showList :last-child{
+    margin-right: 0;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+
+
+
+.productComment .show .showList .img-container img{
+    width: 100%;
 }
 
 .productComment .question .quesList li{
     margin-bottom: 10px;
-    background-color: blue;
+    display: flex;
+    justify-content: space-between;
 }
 
 .productComment .question .quesList span{
@@ -74,18 +108,17 @@
 }
 
 .productComment .question .quesList .quesName{
-    width: 44%;
+    /* width: 44%; */
     font-size: 16px;
-    background-color: red;
+    flex-grow: 1;
 }
 
 .productComment .question .quesList .answer{
-    width: 47%;
     text-align: right;
     color: #b1b1b1;
-    font-size: 16px;
-    background-color: black;
+    font-size: 16px;    
 }
+
 
 
 
