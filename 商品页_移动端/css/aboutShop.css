@@ -9,20 +9,27 @@
 
 .aboutShop .shopSum .shopInfo{
     font-size: 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 .aboutShop .shopSum .shopInfo .left{
-    width: 12%;
+    /* width: 12%; */
     font-size: 14px;
+    display: flex;
+    align-items: center;
+
 }
 .aboutShop .shopSum .shopInfo .right{
-    width: 88%;
+    /* width: 88%; */
     font-size: 14px;
-
+    display: flex;
+    align-items: center;
 }
 
 .aboutShop .shopSum .shopInfo .left .img-container{
-    max-width: 100%;
+    max-width: 80px;
+    margin-right:5px ;
 }
 
 .aboutShop .shopSum .shopInfo .left .img-container img{
@@ -30,30 +37,18 @@
     border-radius: 5px;
 }
 
-.aboutShop .shopSum .shopInfo .left,
-.aboutShop .shopSum .shopInfo .right,
-.aboutShop .shopSum .shopInfo .right div
-{
-    display: inline-block;
-}
-
-/* 
 .aboutShop .shopSum .shopInfo .left .shopName{
-    margin:auto 0;
-} */
-/* 
-.aboutShop .shopSum .shopInfo .right{
-    display: flex;
-} */
+    font-size: 18px;
+}
 
 .aboutShop .shopSum .shopInfo .right .allGoods,
 .aboutShop .shopSum .shopInfo .right .getIn{
     border: 1px solid #f90;
-    /* display: inline-block; */
     border-radius: 999rem;
     padding: 0 10px;
     width: 50%;
     text-align: center;
+    height: 30px;
 }
 
 .aboutShop .shopSum .shopInfo .right .allGoods{
@@ -63,20 +58,8 @@
 .aboutShop .shopSum .shopInfo .right .getIn{
     color:#fff;
     background-color: #fe7701;
-
+    margin-left: 15px;
 }
-
-/* 垂直居中
-.aboutShop .shopSum .shopInfo .right::after,
-.allGoods,
-.getIn{
-    display:inline-block;
-    vertical-align:middle;
-}
-.aboutShop .shopSum .shopInfo .right::after{
-    content:'';
-    height:100%;
-} */
 
 .aboutShop .shopSum .shopMark{
     margin: 12px 0;
@@ -85,11 +68,16 @@
 
 .aboutShop .shopSum .shopMark ul{
     display: flex;
+    justify-content: space-between;
 }
-
 .aboutShop .shopSum .shopMark ul li{
-    width: 32%;
-    margin-right: 9px;
+    flex-basis: 24.2%;
+    flex: 1;
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .aboutShop .shopSum .shopMark ul li span{
@@ -112,7 +100,7 @@
 }
 
 
-.aboutShop .shopRecommend {
+.aboutShop .shopRecommend{
     padding-top: 10px;
 }
 
@@ -138,38 +126,21 @@
 
 }
 
-.aboutShop .shopRecommend .otherGoods{
+.aboutShop .shopRecommend .otherGoods ul{
     font-size: 0;
-}
-
-/* .aboutShop .shopRecommend .otherGoods{
     display: flex;
-    justify-content:space-between;
-} */
+    flex-wrap: wrap;
+    justify-content: space-between;
 
+}
 
 .aboutShop .shopRecommend .otherGoods ul li{
-    max-width: 31%;
-    float: left;
-    margin-right: 10px;
     margin-bottom: 20px;
+    flex-basis: 32.5%;
 }
-.aboutShop .shopRecommend .otherGoods ul li:last-child{
-    margin-right: 0;
-}
-/* .aboutShop .shopRecommend .otherGoods ul::after{
-    content: '';
-    display: block;
-    clear: both;
-} */
 
 .aboutShop .shopRecommend .otherGoods ul li p{
     font-size: 14px;
-}
-
-.aboutShop .shopRecommend .otherGoods .img-container,
-.aboutShop .shopRecommend .otherGoods .goodsName{
-    max-width: 100%;
 }
 
 .aboutShop .shopRecommend .otherGoods .img-container img{
