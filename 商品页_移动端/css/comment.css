@@ -36,13 +36,15 @@
 }
 
 .productComment .comment .commentList .commentItem .user .img-container{
-    max-width: 20px;
+    width: 20px;
     margin-right: 5px;
+    border-radius: 50%;
+    overflow: hidden;
+
 }
 
 .productComment .comment .commentList .commentItem .user .img-container img{
     width: 100%;
-    border-radius: 50%;
 }
 
 .productComment .comment .commentList .commentItem .user .userName{
@@ -68,20 +70,23 @@
     margin-right: 3px;
 }
 
-.productComment .show .showList :first-child{
-    margin-right: 0;
+.productComment .show .showList li:first-child .img-container{
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
+    overflow: hidden;
 }
 
-.productComment .show .showList :last-child{
-    margin-right: 0;
+.productComment .show .showList li:last-child .img-container{
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
+    overflow: hidden;
+
 }
 
+.productComment .show .showList li:last-child{
+    margin-right: 0;
 
-
+}
 
 .productComment .show .showList .img-container img{
     width: 100%;

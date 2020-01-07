@@ -31,11 +31,12 @@
 .aboutShop .shopSum .shopInfo .left .img-container{
     max-width: 80px;
     margin-right:5px ;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .aboutShop .shopSum .shopInfo .left .img-container img{
     width: 100%;
-    border-radius: 5px;
 }
 
 .aboutShop .shopSum .shopInfo .left .shopName{
