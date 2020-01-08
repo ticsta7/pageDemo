@@ -113,15 +113,18 @@
 }
 
 .productComment .question .quesList .quesName{
-    /* width: 44%; */
     font-size: 16px;
     flex-grow: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .productComment .question .quesList .answer{
     text-align: right;
     color: #b1b1b1;
-    font-size: 16px;    
+    font-size: 16px;  
+    flex-shrink: 0;  
 }
 
 
