@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script>
+$(document).on("pagecreate","#pageone",function(){
+  $("p").on("swipe",function(){
+    $("span").text("滑动检测!");
+  });                       
+});
+</script>
+</head>
+<body>
+
+<div data-role="page" id="pageone">
+
+  <div >
+    <p>在下面的文本或方框上滑动。</p>
+    <p style="border:1px solid black;height:200px;width:200px;"></p>
+    <p><span style="color:red"></span></p>
+  </div>
+
+</div> 
+
+</body>
+</html>

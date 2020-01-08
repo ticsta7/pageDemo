@@ -1,5 +1,14 @@
-$(function(){
-    $(".productImg").on("swipe",function(){
-        alert("滑动!");
-    }); 
-}); 
+// $(function(){
+//     $(".productTitle").on("swipe",function(){
+//         alert("滑动!");
+//     });
+// }); 
+
+
+$(document).on("pagecreate","#pageone",function(){
+       
+    $(".productTitle").on("swipe",function(){
+        alert("滑动");
+      }); 
+
+  });
