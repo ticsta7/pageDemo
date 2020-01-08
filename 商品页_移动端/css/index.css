@@ -20,8 +20,20 @@
 }
 
 
-.productImg{
-    position: relative;
+.productImg  ul{
+    width: 3000px;
+}
+
+.productImg  ul li{
+    float: left;
+    max-width: 600px;
+    /* max-height: 500px; */
+}
+
+.productImg ul::after{
+    content: '';
+    display: block;
+    clear: both;
 }
 
 .productImg .img-container{
@@ -30,34 +42,23 @@
     overflow: hidden;
 }
 
-.productImg .img-container ul{
-    width: 3000px;
-}
-
-.productImg .img-container ul li{
-    float: left;
-    max-width: 600px;
-    max-height: 500px;
-}
-
-.productImg .img-container::after{
-    content: '';
-    display: block;
-    clear: both;
-}
-
 .productImg .img-container img{
     width: 100%;
     height: 100%;
     display: block;
 }
 
+.productImg{
+    position: relative;
+    overflow: hidden;
+
+}
+
 .productImg .imgOrder{
     min-width: 54px;
     height: 30px;
-    text-align: center ;
+    text-align: center;
     border-radius: 15px;
-    /* 当border-radius的值>>所需半径,就会胶囊圆角 */
     position: absolute;
     right: 12px;
     bottom: 12px;
@@ -72,7 +73,6 @@
     font-size: 10px;
     color: #ec5613;
     line-height: 35px;
-    margin-top: 10px;
 }
 
 .productShow .productPrice h1 span{
