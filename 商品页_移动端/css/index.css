@@ -149,6 +149,11 @@ background-color:#fff;
     width: 80%;
 }
 
+.productSend .left h3{
+    display: inline-block;
+    font-weight: normal;
+}
+
 .productSend .left .fenGe{
     margin: 0 5px;
     color: #b5b5b5;
