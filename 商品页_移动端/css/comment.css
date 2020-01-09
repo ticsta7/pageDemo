@@ -16,9 +16,10 @@
     margin: 15px 0;
 }
 
-.productComment .title span:first-child{
+.productComment .title h3{
     font-size: 16px;
     color: #333;
+    font-weight: normal;
 }
 
 .productComment .seeMore{
