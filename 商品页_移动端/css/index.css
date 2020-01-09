@@ -78,6 +78,7 @@
 .productShow .productPrice h1 span{
     font-size: 30px;
     font-weight: 400;
+    vertical-align: sub;
 }
 
 .productShow .productTitle{
@@ -85,7 +86,7 @@
     align-items: center;
 }
 
-.productShow .productTitle span{
+.productShow .productTitle .titleContent{
     display: inline-block;
     font-size: 16px;
     line-height: 24px;
