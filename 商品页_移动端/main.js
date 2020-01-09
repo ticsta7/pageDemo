@@ -1,18 +1,35 @@
 $(function(){
-
-    var test = 1;
-
     var imgOrder = $(".imgOrder span").text();
+    var width =$(".productImg").width();
+    console.log(width);
+
+    
 
     $(".recommend .right").on("click",function(){
-        $(".productImg ul").animate({left:"+=-600px"});
+        if(imgOrder < 5){
+            imgOrder++;
+            $(".productImg ul").animate({'left':"+=-600px"});
+        }
+        else{
+            imgOrder=1;
+            $(".productImg ul").animate({left:"+=2400px"});
+        }
+        $(".imgOrder span").text(imgOrder);
       }); 
 
+
+
       $(".recommend .left").on("click",function(){
+        if(imgOrder != 1){
+        imgOrder--;
         $(".productImg ul").animate({left:"+=600px"});
+    }
+
+        $(".imgOrder span").text(imgOrder);
       }); 
       
 }); 
+
 
 
 // $(document).on("pageload","#pageone",function(){
