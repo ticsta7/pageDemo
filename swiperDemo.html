@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <title>demo</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul,
+        ol {
+            list-style: none;
+        }
+        /*清除浮动*/
+        .clearfix:before,
+        .clearfix:after {
+            content: "";
+            display: table;
+            visibility: hidden;
+            height: 0;
+            clear: both;
+        }
+        .box {
+            height: 50vh;
+            width: 100vw;
+            background: paleturquoise;
+            text-align: center;
+            border-left: 1px solid red;
+        }
+        /*轮播图*/
+        .wrpa-w {
+            padding-top: 0 !important;
+        }
+        .banner {
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            z-index: 5;
+        }
+        .banner .container {
+            width: 1000%;
+            -webkit-transform: translateX(-10%);
+            transform: translateX(-10%);
+        }
+        .banner .container li {
+            width: 10%;
+            float: left;
+        }
+        .banner .point {
+            width: 150px;
+            position: absolute;
+            height: 6px;
+            left: 50%;
+            margin-left: -75px;
+            bottom: 5px;
+        }
+        .banner .point li {
+            float: left;
+            width: 10px;
+            height: 4px;
+            background: silver;
+            margin-right: 10px;
+            border-radius: 2px;
+        }
+        .banner .point li:last-child {
+            margin-right: 0;
+        }
+        .now {
+            /* transition: all .5s;
+            transform: scaleX(2) scaleY(1.5); */
+            background: white !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner">
+        <ul class="clearfix container">
+            <li>
+                <div class="box">过渡的555</div>
+            </li>
+            <li>
+                <div class="box">1111</div>
+            </li>
+            <li>
+                <div class="box">2222</div>
+            </li>
+            <li>
+                <div class="box">3333</div>
+            </li>
+            <li>
+                <div class="box">444</div>
+            </li>
+            <li>
+                <div class="box">555</div>
+            </li>
+            <li>
+                <div class="box">过渡的1111</div>
+            </li>
+        </ul>
+
+
+        <ul class="point">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
+<script>
+
+    window.onload = function () {
+        banner();
+    };
+    //滑动结束
+    transitionEnd = function (dom, callback) {
+        if (dom && typeof dom == 'object') {
+            dom.addEventListener('webkitTransitionEnd', function () {
+                callback && callback();
+            });
+            dom.addEventListener('transitionEnd', function () {
+                callback && callback();
+            });
+        }
+    };
+
+
+    function banner() {
+        var banner = document.querySelector('.banner');
+        var width = banner.offsetWidth;
+        var imageBox = banner.querySelector('.container');
+        var pointBox = banner.querySelector('.point');
+        var points = pointBox.querySelectorAll('li');
+        var index = 1;//当前图片索引
+        points[index - 1].className = 'now';
+        var imgLength = points.length;  //轮播图个数（打点个数）
+        
+        //无缝滚动
+        transitionEnd(imageBox, function () {
+            if (index > imgLength) {
+                index = 1;
+                removeTransition();
+                translateX(-index * width);
+            } else if (index <= 0) {
+                index = imgLength;
+                removeTransition();
+                translateX(-index * width);
+            }
+            setPoint();
+        })
+        
+        // 2点对应图片
+        var setPoint = function () {
+            for (var i = 0; i < points.length; i++) {
+                points[i].className = "";
+            }
+            //判断索引 动画结束后设置点
+            points[index - 1].className = 'now';
+        }
+        
+        //3图片滑动
+        var startX = 0;//开始坐标
+        var moveX = 0;//移动时x的坐标
+        var distancex = 0;//移动距离
+        var isMove = false;//是否滑动过
+        imageBox.addEventListener('touchstart', function (e) {
+            startX = e.touches[0].clientX;
+        });
+        imageBox.addEventListener('touchmove', function (e) {
+            isMove = true;
+            moveX = e.touches[0].clientX;
+            distancex = moveX - startX;
+            removeTransition();
+            translateX(-index * width + distancex);
+        });
+        
+        //滑动图片逻辑处理
+        imageBox.addEventListener('touchend', function (e) {
+            if (Math.abs(distancex) > (width / 3) && isMove) {
+                if (distancex > 0) {
+                    index--;
+                } else {
+                    index++;
+                }
+                addTransition();
+                translateX(-index * width);
+            } else {
+                addTransition();
+                translateX(-index * width);
+            }
+            isMove = false;
+            startX = 0;
+            moveX = 0;
+            distancex = 0;
+
+        })
+        
+        /*公用方法*/
+        添加过渡
+        var addTransition = function () {
+            imageBox.style.webkitTransition = 'all .2s ';
+            imageBox.style.transition = "all .2s";
+        }
+        
+        删除过渡
+        var removeTransition = function () {
+            imageBox.style.webkitTransition = 'none';
+            imageBox.style.transition = "none";
+        }
+        
+        // 设置定位
+        var translateX = function (x) {
+            imageBox.style.webkitTransform = 'translateX(' + x + 'px)';
+            imageBox.style.transform = 'translateX(' + x + 'px)';
+
+        }
+    
+    }
+
+
+</script>
