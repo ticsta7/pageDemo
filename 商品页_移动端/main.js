@@ -9,7 +9,7 @@ function slider() {
     var container = document.querySelector('.guodu5');
 
     var width = container.offsetWidth;
-    // console.log('container.width:', width);
+    console.log('container.width:', width);
 
     slideList.style.left = -width + 'px'; // 初始化图片位置
 
