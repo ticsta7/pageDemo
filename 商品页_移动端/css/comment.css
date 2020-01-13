@@ -1,28 +1,28 @@
-.productComment{
+.productComment {
     margin: 15px 0;
     font-size: 0;
     padding: 15px;
 }
 
 .productComment span,
-.productComment a{
+.productComment a {
     display: inline-block;
 }
 
-.productComment .title{
+.productComment .title {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin: 15px 0;
+    margin-bottom: 15px;
 }
 
-.productComment .title h3{
+.productComment .title h3 {
     font-size: 16px;
     color: #333;
     font-weight: normal;
 }
 
-.productComment .seeMore{
+.productComment .seeMore {
     color: #ec5613;
     font-size: 16px;
 }
@@ -32,28 +32,27 @@
 }
 
 .productComment .comment .commentList .commentItem .user .img-container,
-.productComment .comment .commentList .commentItem .user .userName{
+.productComment .comment .commentList .commentItem .user .userName {
     display: inline-block;
 }
 
-.productComment .comment .commentList .commentItem .user .img-container{
+.productComment .comment .commentList .commentItem .user .img-container {
     width: 20px;
     margin-right: 5px;
     border-radius: 50%;
     overflow: hidden;
-
 }
 
-.productComment .comment .commentList .commentItem .user .img-container img{
+.productComment .comment .commentList .commentItem .user .img-container img {
     width: 100%;
 }
 
-.productComment .comment .commentList .commentItem .user .userName{
+.productComment .comment .commentList .commentItem .user .userName {
     color: #999;
     font-size: 16px;
 }
 
-.commentContent{
+.commentContent {
     font-size: 14px;
     -webkit-line-clamp: 1;
     display: -webkit-box;
@@ -62,48 +61,46 @@
     text-overflow: ellipsis;
 }
 
-.productComment .show .showList{
+.productComment .show .showList {
     display: flex;
     justify-content: space-between;
 }
 
-.productComment .show .showList li{
+.productComment .show .showList li {
     margin-right: 3px;
 }
 
-.productComment .show .showList li:first-child .img-container{
+.productComment .show .showList li:first-child .img-container {
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
     overflow: hidden;
 }
 
-.productComment .show .showList li:last-child .img-container{
+.productComment .show .showList li:last-child .img-container {
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
     overflow: hidden;
-
 }
 
-.productComment .show .showList li:last-child{
+.productComment .show .showList li:last-child {
     margin-right: 0;
-
 }
 
-.productComment .show .showList .img-container img{
+.productComment .show .showList .img-container img {
     width: 100%;
 }
 
-.productComment .question .quesList li{
+.productComment .question .quesList li {
     margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
 }
 
-.productComment .question .quesList span{
+.productComment .question .quesList span {
     line-height: 20px;
 }
 
-.productComment .question .quesList .logo{
+.productComment .question .quesList .logo {
     background-color: #f87a44;
     color: #fff;
     padding: 0 2px;
@@ -111,11 +108,10 @@
     margin-right: 5px;
     max-width: 23px;
     font-size: 16px;
-    font-style:normal
-
+    font-style: normal
 }
 
-.productComment .question .quesList .quesName{
+.productComment .question .quesList .quesName {
     font-size: 16px;
     flex-grow: 1;
     white-space: nowrap;
@@ -124,14 +120,9 @@
     font-weight: normal;
 }
 
-.productComment .question .quesList .answer{
+.productComment .question .quesList .answer {
     text-align: right;
     color: #b1b1b1;
-    font-size: 16px;  
-    flex-shrink: 0;  
+    font-size: 16px;
+    flex-shrink: 0;
 }
-
-
-
-
-

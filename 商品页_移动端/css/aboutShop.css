@@ -1,26 +1,24 @@
-.aboutShop{
+.aboutShop {
     padding-top: 12px;
 }
 
-.aboutShop .shopSum{
+.aboutShop .shopSum {
     border-bottom: 1px solid #9a9a9a;
 }
 
-
-.aboutShop .shopSum .shopInfo{
+.aboutShop .shopSum .shopInfo {
     font-size: 0;
     display: flex;
     justify-content: space-between;
 }
 
-.aboutShop .shopSum .shopInfo .left{
-    /* width: 12%; */
+.aboutShop .shopSum .shopInfo .left {
     font-size: 14px;
     display: flex;
     align-items: center;
-
 }
-.aboutShop .shopSum .shopInfo .right{
+
+.aboutShop .shopSum .shopInfo .right {
     width: 60%;
     font-size: 14px;
     display: flex;
@@ -28,59 +26,51 @@
     justify-content: flex-end;
 }
 
-.aboutShop .shopSum .shopInfo .left .img-container{
+.aboutShop .shopSum .shopInfo .left .img-container {
     max-width: 80px;
-    margin-right:5px ;
+    margin-right: 5px;
     border-radius: 5px;
     overflow: hidden;
 }
 
-.aboutShop .shopSum .shopInfo .left .img-container img{
+.aboutShop .shopSum .shopInfo .left .img-container img {
     width: 100%;
 }
 
-.aboutShop .shopSum .shopInfo .left .shopName{
-    font-size: 18px;
-    -webkit-line-clamp: 1;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
+.aboutShop .shopSum .shopInfo .left .shopName {
+    flex-shrink: 0;
 }
 
 .aboutShop .shopSum .shopInfo .right .allGoods,
-.aboutShop .shopSum .shopInfo .right .getIn{
+.aboutShop .shopSum .shopInfo .right .getIn {
     border: 1px solid #f90;
     border-radius: 15px;
     padding: 0 10px;
-
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
-.aboutShop .shopSum .shopInfo .right .allGoods{
-    color:#de7039;
+.aboutShop .shopSum .shopInfo .right .allGoods {
+    color: #de7039;
 }
 
-.aboutShop .shopSum .shopInfo .right .getIn{
-    color:#fff;
+.aboutShop .shopSum .shopInfo .right .getIn {
+    color: #fff;
     background-color: #fe7701;
     margin-left: 5px;
-
 }
 
-.aboutShop .shopSum .shopMark{
+.aboutShop .shopSum .shopMark {
     margin: 12px 0;
 }
 
-
-.aboutShop .shopSum .shopMark ul{
+.aboutShop .shopSum .shopMark ul {
     display: flex;
     justify-content: space-between;
 }
 
-.aboutShop .shopSum .shopMark ul li{
+.aboutShop .shopSum .shopMark ul li {
     -webkit-line-clamp: 1;
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -89,43 +79,42 @@
     color: #9a9a9a;
 }
 
-.aboutShop .shopSum .shopMark ul li p{
+.aboutShop .shopSum .shopMark ul li p {
     color: #9a9a9a;
     display: inline-block;
 }
 
-.aboutShop .shopSum .shopMark ul li .markNum{
+.aboutShop .shopSum .shopMark ul li .markNum {
     color: #ec5613;
 }
 
-.aboutShop .shopSum .shopMark ul li .markLevel{
+.aboutShop .shopSum .shopMark ul li .markLevel {
     color: #ec5613;
-    /* background-color: #fff1eb; */
+    background-color: #fff1eb;
     height: 20px;
     width: 20px;
     border-radius: 50%;
     padding-left: 3px;
     line-height: 20px;
-    font-style:normal;
-    background-color: black;
-    
+    font-style: normal;
+    display: inline-block;
 }
 
-
-.aboutShop .shopRecommend{
+.aboutShop .shopRecommend {
     padding-top: 10px;
 }
 
-.aboutShop .shopRecommend .title{
+.aboutShop .shopRecommend .title {
     margin-bottom: 10px;
+    font-size: 0;
 }
 
-.aboutShop .shopRecommend .title a{
+.aboutShop .shopRecommend .title a {
     width: 100%;
     display: inline-block;
 }
 
-.aboutShop .shopRecommend .title a div{
+.aboutShop .shopRecommend .title a div {
     width: 50%;
     display: inline-block;
     font-size: 16px;
@@ -133,35 +122,33 @@
     font-weight: normal;
 }
 
-.aboutShop .shopRecommend .title a .seeMore{
+.aboutShop .shopRecommend .title a .seeMore {
     text-align: right;
     color: #ec5613;
-
 }
 
-.aboutShop .shopRecommend .otherGoods ul{
+.aboutShop .shopRecommend .otherGoods ul {
     font-size: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
 }
 
-.aboutShop .shopRecommend .otherGoods ul li{
+.aboutShop .shopRecommend .otherGoods ul li {
     margin-bottom: 20px;
     flex-basis: 32.5%;
 }
 
-.aboutShop .shopRecommend .otherGoods ul li p{
+.aboutShop .shopRecommend .otherGoods ul li p {
     font-size: 14px;
 }
 
-.aboutShop .shopRecommend .otherGoods .img-container img{
+.aboutShop .shopRecommend .otherGoods .img-container img {
     width: 100%;
     border-radius: 5px;
 }
 
-.aboutShop .shopRecommend .otherGoods .goodsName{
+.aboutShop .shopRecommend .otherGoods .goodsName {
     -webkit-line-clamp: 2;
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -170,15 +157,13 @@
     /* https://www.zoo.team/article/text-overflow */
 }
 
-.aboutShop .shopRecommend .otherGoods .price{
+.aboutShop .shopRecommend .otherGoods .price {
     font-size: 10px;
     color: #ec5613;
     line-height: 35px;
 }
 
-.aboutShop .shopRecommend .otherGoods .price span{
+.aboutShop .shopRecommend .otherGoods .price span {
     font-size: 16px;
     font-weight: 400;
 }
-
-

@@ -93,7 +93,7 @@
     line-height: 24px;
     font-weight: 900;
     width: 80%;
-    margin: 10px 0;
+    margin: 3px 0;
 }
 
 .productShow .productTitle a {
@@ -109,7 +109,6 @@
 
 .productShow .recommend {
     font-size: 0;
-    padding-right: 15px;
 }
 
 .productShow .recommend a {
@@ -127,6 +126,7 @@
 .productShow .recommend .right {
     background-color: #fff;
     width: 50%;
+    padding-right: 15px;
 }
 
 .productSend {
