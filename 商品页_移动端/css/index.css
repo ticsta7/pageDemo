@@ -221,3 +221,16 @@
     text-overflow: ellipsis;
     margin-right: 10px;
 }
+
+.popPage {
+    height: 67%;
+    max-width: 600px;
+    background-color: aqua;
+    z-index: 1000;
+    position: fixed;
+    bottom: 0;
+}
+
+.parameterPage .pageTitle {
+    text-align: center;
+}
