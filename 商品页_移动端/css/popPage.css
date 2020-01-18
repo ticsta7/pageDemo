@@ -1,0 +1,63 @@
+.popPage,
+.servicePage {
+    height: 67%;
+    max-width: 600px;
+    background-color: #fff;
+    z-index: 1000;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-top: 1px solid #7b7c7dab;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding: 10px;
+}
+
+.popPage .pageTitle {
+    text-align: center;
+    color: #000;
+}
+
+.popPage .items,
+.parameterPage .items {
+    border-bottom: 1px solid #f0f1f2;
+    padding: 10px;
+    font-size: 0;
+}
+
+.popPage .left,
+.popPage .right {
+    display: inline-block;
+    font-size: 14px;
+}
+
+.popPage .left {
+    width: 33%;
+    vertical-align: top;
+    color: #000;
+}
+
+.popPage .right {
+    width: 67%;
+    color: #656667;
+}
+
+.popPage .btn {
+    position: absolute;
+    width: 93%;
+    height: 7%;
+    bottom: 10px;
+    margin: 0 auto;
+    background-color: #ff6200;
+    color: #fff;
+    border-radius: 30px;
+}
+
+.parameterPage {
+    display: none;
+}
+
+.servicePage {
+    /* display: none; */
+}

@@ -1,7 +1,67 @@
 .container {
     background-color: #f8f8f8;
     max-width: 600px;
+    margin: 11% auto 0;
+    transform: translate(0, 0);
+}
+
+.topbar{
+    padding: 5px 10px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: #f2f2f2;
+    left: 0;
+    right: 0;
+    max-width: 600px;
     margin: 0 auto;
+    
+}
+
+.topbar .top{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.topbar .top i,
+.topbar .top input
+{
+    margin-right: 15px;
+}
+
+.topbar .top i:last-child{
+    margin-right: 0;
+}
+
+.icon-search{
+    position: absolute;
+    left: 38px;
+}
+
+.topbar .top input{
+    flex-grow: 1;
+    border-radius: 30px;
+    overflow: hidden;
+    border: 0;
+    padding-left: 25px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    font-size: 17px;
+    font-weight: 400;
+    
+}
+
+.menu a{
+    color: #000;
+}
+.menu .actived{
+    color: #ec5613;
+    border-bottom: 2px solid #ec5613;
 }
 
 .productShow,
@@ -220,17 +280,4 @@
     overflow: hidden;
     text-overflow: ellipsis;
     margin-right: 10px;
-}
-
-.popPage {
-    height: 67%;
-    max-width: 600px;
-    background-color: aqua;
-    z-index: 1000;
-    position: fixed;
-    bottom: 0;
-}
-
-.parameterPage .pageTitle {
-    text-align: center;
 }

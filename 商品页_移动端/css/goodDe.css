@@ -1,0 +1,79 @@
+.goodDetail .title{
+    text-align: center;
+    background-color: #eee;
+    line-height: 40px;
+    height: 40px
+}
+
+.goodDetail .detailImgs li,
+.goodDetail .detailImgs .img-container{
+    max-width: 600px;
+    /* overflow: hidden; */
+}
+
+.goodDetail .detailImgs .img-container img{
+    width: 100%;
+}
+
+
+
+.botbar {
+    padding: 15px 15px 4px;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    max-width: 600px;
+    background-color: #fff;
+    margin: 0 auto;
+    height: 60px;
+}
+
+.botbar .left{
+    display: flex;
+}
+
+.botbar .left div:first-child{
+    color: #ff6a00;
+}
+.botbar .icons{
+    margin-right: 20px;
+    /* padding-bottom: 10px; */
+    line-height: 20px;
+}
+
+.botbar .icons i{
+    font-size: 26px;
+}
+
+.botbar .icons .iconName{
+    font-size: 14px;
+}
+
+.botbar .btns{
+    flex-grow: 1;
+    display: flex;
+}
+
+.botbar .btns div{
+    padding: 5px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.botbar .btns .addCart{
+    background-color: #ffb200;
+    color: #fff;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    overflow: hidden;
+}
+
+.botbar .btns .buyNow{
+    background-color: #ff6a00;
+    color: #fff;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    overflow: hidden;
+}

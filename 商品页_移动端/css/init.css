@@ -3,6 +3,10 @@ li,ul,ol {
   list-style: none;
 }
 
+i{
+  font-style: normal;
+}
+
 fieldset,
 img {
   border: 0;
