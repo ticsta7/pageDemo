@@ -90,6 +90,10 @@
     width: 100%;
 }
 
+.productComment .question{
+    margin-top: 10px;
+}
+
 .productComment .question .quesList li {
     margin-bottom: 10px;
     display: flex;

@@ -1,5 +1,14 @@
-.popPage,
+.parameterPage {
+    display: none;
+}
+
 .servicePage {
+    display: none;
+}
+
+
+.popPage {
+    margin: 0 auto;
     height: 67%;
     max-width: 600px;
     background-color: #fff;
@@ -17,13 +26,18 @@
 .popPage .pageTitle {
     text-align: center;
     color: #000;
+    font-size: 18px;
+    margin-bottom: 20px;
 }
 
-.popPage .items,
-.parameterPage .items {
-    border-bottom: 1px solid #f0f1f2;
+.popPage .items{
     padding: 10px;
     font-size: 0;
+}
+
+.parameterPage .items {
+    border-bottom: 1px solid #f0f1f2;
+    
 }
 
 .popPage .left,
@@ -32,32 +46,54 @@
     font-size: 14px;
 }
 
+
 .popPage .left {
-    width: 33%;
     vertical-align: top;
     color: #000;
 }
 
 .popPage .right {
-    width: 67%;
     color: #656667;
 }
 
 .popPage .btn {
     position: absolute;
-    width: 93%;
-    height: 7%;
-    bottom: 10px;
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    bottom: 0px;
     margin: 0 auto;
     background-color: #ff6200;
     color: #fff;
+}
+
+.parameterPage .left {
+    width: 33%;
+}
+
+.parameterPage .right {
+    width: 67%;
+}
+
+.parameterPage  .btn{
+    bottom: 10px;
     border-radius: 30px;
+    width: 93%;
+
 }
 
-.parameterPage {
-    display: none;
+.servicePage .left{
+    width: 10%;
+    color: #f25300;
 }
 
-.servicePage {
-    /* display: none; */
+.servicePage .items .desc{
+    font-size: 10px;
+    margin-left: 10%;
+}
+
+
+.servicePage .btn{
+    left: 0;
+
 }

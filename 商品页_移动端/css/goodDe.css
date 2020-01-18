@@ -15,8 +15,6 @@
     width: 100%;
 }
 
-
-
 .botbar {
     padding: 15px 15px 4px;
     display: flex;
@@ -28,6 +26,7 @@
     background-color: #fff;
     margin: 0 auto;
     height: 60px;
+    border-top: 1px solid #f4f4f4;
 }
 
 .botbar .left{
@@ -77,3 +76,57 @@
     border-top-right-radius: 30px;
     overflow: hidden;
 }
+
+.tuijian .title{
+    text-align: center;
+    color: #ff6a00;
+    height: 40px;
+    line-height: 40px;
+}
+
+.tuijian .tjList{
+    /* font-size: 0; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tuijian .tjList li{
+    flex-basis: 49%;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    /* border-top-left-radius: 10px;
+    border-top-right-radius: 10px; */
+}
+
+.tuijian .tjList li .img-container{
+    overflow: hidden;
+}
+
+.tuijian .tjList li .img-container img{
+    width: 100%;
+}
+
+.tuijian .tjList li .name,
+.tuijian .tjList li .data{
+    padding-left: 15px;
+}
+
+.tuijian .tjList li .price{
+    font-size: 20px;
+    color: #ff6a00;
+}
+
+.tuijian .tjList li .price,
+.tuijian .tjList li .buyNum{
+    display: inline-block;
+}
+
+.tuijian .tjList li .buyNum{
+    color: #a0a0a0;
+}
+
+
+
