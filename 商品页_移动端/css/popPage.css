@@ -95,13 +95,8 @@
     margin-left: 10%;
 }
 
-
 .servicePage .btn{
     left: 0;
-}
-
-.selectPage{
-    
 }
 
 .selectPage .goodSum {
@@ -161,6 +156,11 @@
     line-height: 40px;
     padding: 0 5px;
     border-radius: 10px;
+}
+
+.selectPage .seleItems ul li .selected{
+    border: 1px solid #ff6200;
+    color: #ff6200;
 }
 
 .selectPage .buyNum{
